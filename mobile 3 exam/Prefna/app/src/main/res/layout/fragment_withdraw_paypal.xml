@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AppleGreen"
+    tools:context=".WithdrawPaypal"
+    android:paddingTop="150dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="30dp">
+
+    <TextView
+        android:id="@+id/network_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Network"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <Spinner
+        android:id="@+id/network_sp"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number +"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingTop="30dp"
+        android:layout_below="@id/network_text"/>
+
+    <EditText
+        android:id="@+id/phoned"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/network_sp"
+        android:layout_alignParentRight="true"
+        android:paddingTop="30dp"
+        android:hint="Format: 256775123456"/>
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Red"
+        android:text="Note::>>"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:paddingTop="36dp"
+        android:layout_below="@id/phone"/>
+
+    <TextView
+        android:id="@+id/dont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DONT EXCEED:"
+        android:layout_marginLeft="60dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:paddingTop="36dp"
+        android:layout_below="@id/phone"/>
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Red"
+        android:text="600$"
+        android:layout_marginLeft="160dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:paddingTop="36dp"
+        android:layout_below="@id/phone"/>
+
+    <TextView
+        android:id="@+id/fori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="for instance cashout"
+        android:layout_marginLeft="195dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:paddingTop="36dp"
+        android:layout_below="@id/phone"/>
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount(USD)"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingTop="36dp"
+        android:layout_below="@id/note"/>
+
+    <EditText
+        android:id="@+id/amounted"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dont"
+        android:layout_alignParentRight="true"
+        android:paddingTop="30dp"
+        android:hint="Figures only Eg:30"/>
+
+    <Button
+        android:id="@+id/send"
+        android:background="@drawable/submission_button"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/Green"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:textSize="14sp"
+        android:layout_below="@id/amounted"/>
+
+    <Button
+        android:id="@+id/clear"
+        android:background="@drawable/submission_button"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/Orange"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="60dp"
+        android:layout_alignParentRight="true"
+        android:textSize="14sp"
+        android:layout_below="@id/amounted"/>
+
+</RelativeLayout>

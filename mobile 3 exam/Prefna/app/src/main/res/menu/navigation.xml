@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/loginb"
+        android:title="Login"
+        android:icon="@drawable/ic_login"/>
+
+    <item
+        android:id="@+id/signupb"
+        android:title="Signup"
+        android:icon="@drawable/ic_signup"/>
+
+    <item
+        android:id="@+id/mysqlb"
+        android:title="MysqlDB"
+        android:icon="@drawable/ic_data"/>
+
+    <item
+        android:id="@+id/withdrawpaypal"
+        android:title="Withdraw PayPal"
+        android:icon="@drawable/pay"/>
+</menu>
